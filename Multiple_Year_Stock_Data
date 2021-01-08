@@ -48,7 +48,7 @@ For x = 2 To iRow
         End If
                 
         'Compute Percent Change
-        If StVol = 0 Then
+        If OpenVal = 0 Then
             PChg = 0
         Else
             PChg = YChg / OpenVal
