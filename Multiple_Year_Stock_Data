@@ -93,7 +93,12 @@ Next i
 
 ' Format cells
 ws.Range("K:K, Q2:Q3").NumberFormat = "0.00%"
-ws.Columns("I:Q").EntireColumn.AutoFit
+ws.Rows("1").HorizontalAlignment = xlCenter
+ws.Rows("1").Font.Bold = True
+ws.Range("O2:O4").Font.Bold = True
+ws.Columns("A:Q").EntireColumn.AutoFit
+ws.Columns("H").ColumnWidth = 4
+ws.Columns("M:N").ColumnWidth = 2
 
 Next ws
 
